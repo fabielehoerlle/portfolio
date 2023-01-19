@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/widgets/FloresDialog.dart';
+import 'package:portfolio/widgets/NubankDialog.dart';
 import 'package:portfolio/widgets/ProjectItem.dart';
+import 'package:portfolio/widgets/ReceitasDialog.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -7,23 +10,24 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        padding: const EdgeInsets.all(50),
-        child: Row(
+      body: SingleChildScrollView(
+        child: Column(
           children: [
-            const Content(),
             Container(
-              width: 500,
+              margin: const EdgeInsets.only(top: 50, left: 50, right: 50),
+              padding: const EdgeInsets.only(right: 460),
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage("assets/fabi.jpg"),
-                  fit: BoxFit.cover,
+                  fit: BoxFit.contain,
+                  alignment: Alignment.centerRight,
                 ),
                 borderRadius: BorderRadius.only(
                   topRight: Radius.circular(50),
                   bottomRight: Radius.circular(50),
                 ),
               ),
+              child: const Content(),
             ),
           ],
         ),
@@ -68,12 +72,24 @@ class Content extends StatelessWidget {
             Row(
               children: [
                 ProjectItem(
-                  image: "assets/nubank.jpg",
+                  image: "assets/nubank.png",
                   title: "Layout da Nubank em Flutter",
+                  dialogContent: const NubankDialog(),
+                  dialogBackgroundColor: const Color(0xFF9904D9),
                 ),
                 const SizedBox(width: 10),
                 ProjectItem(
-                    image: "assets/flores.png", title: "Projeto Pessoal Web"),
+                  image: "assets/receitas.png",
+                  title: "Receitas Mobile",
+                  dialogContent: const ReceitasDialog(),
+                  dialogBackgroundColor: const Color(0xFFF2B705),
+                ),
+                const SizedBox(width: 10),
+                ProjectItem(
+                  image: "assets/flores.png",
+                  title: "Projeto Pessoal Web",
+                  dialogContent: const FloresDialog(),
+                ),
               ],
             ),
           ],

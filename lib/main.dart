@@ -15,6 +15,7 @@ class MyWidget extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.from(colorScheme: const ColorScheme.light()).copyWith(
+        visualDensity: VisualDensity.adaptivePlatformDensity,
         scaffoldBackgroundColor: const Color(0xFF261A17),
         textTheme: const TextTheme(
           bodyMedium: TextStyle(
