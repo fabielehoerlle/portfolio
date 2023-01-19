@@ -1,16 +1,10 @@
-# portfolio
+# Portifólio Fabiele Hoerlle
 
-A new Flutter project.
+Meu portifólio pessoal.
 
-## Getting Started
+## anotações
 
-This project is a starting point for a Flutter application.
+         width   height
 
-A few resources to get you started if this is your first Flutter project:
+imagem2:   155 x 266.9184290030212
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

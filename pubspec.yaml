@@ -68,8 +68,17 @@ flutter:
       - assets/logo-flutter.png
       - assets/logo-dart.png
       - assets/logo-github.png
-      - assets/nubank.jpg
+      - assets/nubank.png
       - assets/flores.png
+      - assets/receitas.png
+      - assets/printnubank.png
+      - assets/celular.png
+      - assets/flores1.png
+      - assets/flores2.png
+      - assets/flores3.png
+      - assets/flores4.png
+      - assets/receitas1.png
+      - assets/receitas2.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
